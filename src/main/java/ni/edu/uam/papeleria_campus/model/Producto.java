@@ -1,17 +1,19 @@
 package ni.edu.uam.papeleria_campus.model;
 
+import java.math.BigDecimal;
+
 public class Producto {
     private int id_producto;
     private String codigo;
     private String nombre;
     private String categoria;
-    private double precio;
+    private BigDecimal precio;
     private int stock;
 
     public Producto() {
     }
 
-    public Producto(int id_producto, String codigo, String nombre, String categoria, double precio, int stock) {
+    public Producto(int id_producto, String codigo, String nombre, String categoria, BigDecimal precio, int stock) {
         this.id_producto = id_producto;
         this.codigo = codigo;
         this.nombre = nombre;
@@ -52,11 +54,11 @@ public class Producto {
         this.categoria = categoria;
     }
 
-    public double getPrecio() {
+    public BigDecimal getPrecio() {
         return precio;
     }
 
-    public void setPrecio(double precio) {
+    public void setPrecio(BigDecimal precio) {
         this.precio = precio;
     }
 
